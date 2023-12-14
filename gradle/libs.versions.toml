@@ -3,14 +3,21 @@
 annotations = "24.0.1"
 
 # plugins
-kotlin = "1.9.10"
+kotlin = "1.9.10" # jvm plugin
 changelog = "2.2.0"
 gradleIntelliJPlugin = "1.16.0"
 qodana = "0.1.13"
 kover = "0.7.3"
 
+# user libraries
+kotlinxSerialization = "1.6.2"
+
+# user plugins
+serialization = "1.9.10"
+
 [libraries]
 annotations = { group = "org.jetbrains", name = "annotations", version.ref = "annotations" }
+kotlinxSerialization = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinxSerialization" }
 
 [plugins]
 changelog = { id = "org.jetbrains.changelog", version.ref = "changelog" }
@@ -18,3 +25,6 @@ gradleIntelliJPlugin = { id = "org.jetbrains.intellij", version.ref = "gradleInt
 kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 kover = { id = "org.jetbrains.kotlinx.kover", version.ref = "kover" }
 qodana = { id = "org.jetbrains.qodana", version.ref = "qodana" }
+
+# user plugins
+serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "serialization" }
