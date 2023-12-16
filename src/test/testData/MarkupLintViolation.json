@@ -1,0 +1,20 @@
+[
+  {
+    "severity": "error",
+    "message": "このコンテキストでは、トランスペアレントモデルを介して要素「ul」にテキストノードを含めることはできません",
+    "line": 2,
+    "col": 19,
+    "raw": "Home",
+    "ruleId": "permitted-contents",
+    "filePath": "/Users/h_tsuchida/Programs/markuplint/index.html"
+  },
+  {
+    "severity": "error",
+    "message": "ロール「list」にはロール「listitem」が必要です",
+    "line": 1,
+    "col": 1,
+    "raw": "<ul>",
+    "ruleId": "wai-aria",
+    "filePath": "/Users/h_tsuchida/Programs/markuplint/index.html"
+  }
+]

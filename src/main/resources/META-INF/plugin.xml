@@ -6,11 +6,8 @@
 
     <depends>com.intellij.modules.platform</depends>
 
-    <resource-bundle>messages.MyBundle</resource-bundle>
-
     <extensions defaultExtensionNs="com.intellij">
-        <!--        <projectConfigurable groupId="tools" instance="com.yoheimuta.intellij.plugin.protolint.ProjectConfigurationPanel"/>-->
-        <externalAnnotator language="html"
+        <externalAnnotator language="HTML"
                            implementationClass="dev.totto2727.plugin.idea.test.annotator.MarkupLintAnnotator"/>
     </extensions>
 
